@@ -1,9 +1,29 @@
 .indexWrapper {
     display: flex;
     flex-direction: column;
-    justify-content: center;
 }
 
-.indexHeader {
+.title {
+    align-self: center;
+}
+
+.typewriter {
+    width: 14.5ch;
+    animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 4px solid olivedrab;
     font-size: 3em;
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent
+    }
 }

@@ -32,5 +32,13 @@
     <div>
         {{ .Content }}
     </div>
+    <br>
+    <br>
+    
+    {{ if not (in .Page.Title "📝 About") }}
+        {{ template "_internal/disqus.html" . }}
+    {{end}}
+    
+
 </div>
 {{ end }}
